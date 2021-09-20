@@ -9,5 +9,4 @@ exports.logger = winston.createLogger({
         new winston.transports.File({ filename: 'combined.log' })
     ]
 });
-exports.logger.warning('hello');
 //# sourceMappingURL=index.js.map
