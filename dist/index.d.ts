@@ -1,2 +1,2 @@
-import * as winston from "winston";
-export declare const logger: winston.Logger;
+import * as winston from 'winston'
+export declare const logger: winston.Logger

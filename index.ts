@@ -2,7 +2,7 @@ import * as winston from 'winston'
 import { ElasticsearchTransport } from 'winston-elasticsearch'
 
 const esTransportOpts = {
-  level: 'info'
+  level: 'info',
 }
 const esTransport = new ElasticsearchTransport(esTransportOpts)
 esTransport.on('error', (error) => {
@@ -13,6 +13,6 @@ export const logger = winston.createLogger({
   transports: [
     new winston.transports.Console(),
     esTransport,
-    new winston.transports.File({ filename: 'combined.log' })
-  ]
+    new winston.transports.File({ filename: 'combined.log' }),
+  ],
 })
